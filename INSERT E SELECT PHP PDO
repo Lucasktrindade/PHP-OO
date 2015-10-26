@@ -1,0 +1,8 @@
+//INSERT
+$buscasegura = $pdo->prepare("INSERT INTO login(login)VALUES(:login)");
+$buscasegura ->bindValue(":login","lucas");
+$buscasegura ->execute();
+//SELECT
+$buscasegura = $pdo->prepare("SELECT * FROM login WHERE login=:login");
+$buscasegura ->bindValue(":login","lucas");
+$buscasegura ->execute();
