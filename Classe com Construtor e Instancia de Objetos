@@ -1,0 +1,28 @@
+class Pessoa{
+		private $login;
+		protected $senha;
+
+		public function __construct($login,$senha){
+			$this->login = $login;
+			$this->senha = $senha;
+		}
+
+		public function getLogin(){
+			return $this->login;
+		}
+
+		public function setLogin($login){
+			$this->login = $login;
+		}
+		public function getSenha(){
+			return $this->senha;
+		}
+
+		public function setSenha($senha){
+			$this->senha = $senha;
+		}
+	}
+	
+	$p1 = new Pessoa("Lucas","12345");
+	echo "Login: ". $p1->getLogin();
+	echo "Senha: ". $p1->getSenha();
